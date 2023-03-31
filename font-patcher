@@ -766,6 +766,8 @@ class font_patcher:
             else:
                 box_keep = True # just scale do not copy
                 box_enabled = False # Cowardly not scaling existing glyphs, although the code would allow this
+        else:
+            box_keep = False
 
         # Stretch 'xz' or 'pa' (preserve aspect ratio)
         # Supported params: overlap | careful | xy-ratio | dont_copy
